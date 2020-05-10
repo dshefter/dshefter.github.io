@@ -7,7 +7,8 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+<script src="script.js"> </script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
  <body>
 
@@ -28,43 +29,367 @@
 
 <section id="user-info">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
+<div class="nav-bar">
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img src="images/logo2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   </div>
-</nav>
 
     <!--------About-------->
 
 <div class="about container" id="about">
 <div class="row">
 <div class="col-md-6 text-center">
-<img src=
+<img src="images/second_pic.jpg" class="second-img">
+<br>
+<br>
+</div>
+<div class="col-md-6">
+<div class="about-header-1">
+  <h3>WHO AM I?</h3>
+</div>
+<p>
+I am Deena Shefter, a junior at Columbia University studying Neuroscience
+and Applied Statistics. 
+</p>
+
+<div class="about-header-2">
+  <h3>WHAT DO I DO?</h3>
+</div>
+<p>
+I am currently working on research in computational neuroscience on neural processes in the visual system of a microscopic
+organism. I believe that technology can revolutionize healthcare and I am interested in studying and using computational biology 
+with applications of machine learning and data science to make strides in medicine. 
+</p>
+
+<!-- <div class="skills-bar">
+<p>Research Methods</p>
+</div class="progress">
+</div class="progress-bar" style="width: 80%;"><!80%></div> -->
+</div>
+
 </div>
 </div>
 </div>
+</div>
+
+<!--------------Resume-------------->
+<div class="resume" id="resume">
+<div class="container" id="resume-container">
+<div class="col-md-6" id="experience-column">
+
+
+<!--------------Experience--------->
+
+<div class="header" id="exp-header">
+  <h3>Experience</h3>
+</div>
+
+<div class="row">
+
+<ul>
+<div class="experience_container">
+<h4>Simons Foundation Center for Computational Biology</h4>
+<i>Associate Research Analyst</i>
+<p>
+  <ul>
+    <li>Full-time research analyst (2020), summer intern (2019)</li>
+    <li>Investigate neural processes in visual system of microscopic wasp</li> 
+    <li>Analyze connectomics data with Pandas Dataframes</li> 
+    <li>Implement machine learning models</li> 
+  </ul>
+</p>
+</div>
+
+
+<div class="experience_container">
+<h4>Columbia Undergraduate Science Journal</h4>
+<i>CJSJ Editor-in-Chief</i>
+<p>
+  <ul>
+    <li>Elected by executive board to be editor in chief of professional-level, peer-review journal</li>
+    <li>Oversee entire editing and publishing process</li>
+    <li>Spearhead scientific outreach to high school students</li> 
+    <li>Organize campus-wide research and STEM events</li> 
+  </ul>
+</p>
+</div>
+
+
+<div class="experience_container">
+<h4>Neuroscience Lab Columbia University Medical Center</h4>
+<i>Researcher</i>
+<p>
+  <ul>
+    <li>Worked in R and ImageJ to optimize immunolabeling techniques for memory traces in mice </li>
+    <li>Prepared hippocampus samples and performed microscopy for data collection</li> 
+    <li>Gave monthly presentation on groundbreaking findings in scientific literature </li> 
+    <li>Implementing machine learning models</li> 
+  </ul>
+</p>
+</div>
+
+
+<div class="experience_container">
+<h4>Breast Cancer Genetics Lab Columbia University Medical Center</h4>
+<i>Laboratory Intern</i>
+<p>
+  <ul>
+    <li>Conducted polymerase-chain reactions and a number of other wet-lab procedures</li>
+    <li>Performed dissections of mice to investigate breast tumors</li> 
+  </ul>
+</p>
+</div>
+</ul>
+
+</div>
+
+
+</div>
+
+<!--------------Education-------------->
+
+<div class="col-md-6" id="education">
+  <div class="header" id="ed-header">
+    <h3>Education</h3>
+  </div>
+<div class="row">
+<ul>
+
+
+<div class="education_container">
+  <h4>Columbia University</h4>
+  <i>Bachelor of Arts in Neuroscience and Data Science</i>
+  <p>
+    <ul>
+      <li>Neuroscience Coursework: Science of Psychology, Biology I/II, Chemistry I/II </li>
+      <li>Data Science Coursework: Probability for Engineers, Calculus-Based Statistics, Linear Algebra, Data Structures and Algorithms, Introduction to Computer Science in Java, Calculus II</li> 
+    </ul>
+  </p>
+</div>
+
+<div class="education_container">
+  <h4>Bergen County Academies</h4>
+  <i>High School Student</i>
+  <p>
+    <ul>
+      <li>High School Coursework: AP Calculus, AP Biology, Advanced Chemistry, AP Statistics, AP Physics C </li>
+      <li>GPA: 3.84/4.00</li> 
+    </ul>
+  </p>
+</div>
+
+<div class="education_container">
+  <h4>Rutgers University</h4>
+  <i>Visiting Student, Mini Medical School Course</i>
+  <p>
+    <ul>
+      <li>Undergraduate Coursework: General Physics I/II, General Physics Lab I/II</li>
+      <li>Mini Medical School: Attended lectures of medical professionals of various specialties (i.e. cardiology, forensic pathology, neuroscience)</li> 
+    </ul>
+  </p>
+</div>
+</ul>
+</div>
+
+<!------------Awards and Honors------------>
+
+<div class="header" id="ed-header">
+  <h3>Awards and Honors</h3>
+</div>
+<div class="awards-container">
+<p>
+  <ul>
+      <li><b>Dean's List</b></li>
+      <li><b>Davidson Fellow</b> ($25,000 scholarship) - awarded upon submission of research paper</li>
+      <li><b>Regeneron Science Talent Search Semifinalist</b> ($2,000 prize)</li>
+      <li><b>Research Expo Symposium Finalist</b> ($200 prize)</li>
+      <li><b>Health Occupations Student of America</b> - Second Place at International Competition</li>
+  </ul>
+</p>
+</div>
+<br>
+<br>
+<br>
+
+
+</div>
+</div>
+
+<!-------------Skills-------------->
+<div class="skills-section">
+
+
+  <div class="header" id="skills-header">
+    <h3>Skills</h3>
+  </div>
+  <div class="skills-button-container">
+  <div href="something" class="skills-button" style="background-color:#f14ebd">All</div>
+  <div href="something" class="skills-button" style="background-color:#f14e4e">Research</div>
+  <div href="something" class="skills-button" style="background-color:#f1bb4e">Computational</div>
+  <div href="something" class="skills-button" style="background-color:#84f14e">Data Analysis</div>
+  <div href="something" class="skills-button" style="background-color:#4ef18f">Experimental</div>
+  <div href="something" class="skills-button" style="background-color:#4e9af1">Quantitative</div>
+  <div href="something" class="skills-button" style="background-color:#9a4ef1">Web Development</div>
+  </div>
+  
+  <div class="skills-bars-container">
+  <div class="skills-bars">
+  <div class="skills-bar-header">
+  <li>
+    <h5>Independent Project Planning</h5><span class="bar"><span class="IndependentProjectPlanning"></span></span>
+  </li>
+  
+  <li>
+    <h5>Scientific Writing</h5><span class="bar"><span class="ScientificWriting"></span></span>
+  </li>
+  
+  <li>
+    <h5>Public Speaking</h5><span class="bar"><span class="PublicSpeaking"></span></span>
+  </li>
+  
+  <li>
+    <h5>Presentation</h5><span class="bar"><span class="Presentation"></span></span>
+  </li>
+  
+  <li>
+    <h5>Numpy</h5><span class="bar"><span class="Numpy"></span></span>
+  </li>
+  
+  <li>
+    <h5>Pandas</h5><span class="bar"><span class="Pandas"></span></span>
+  </li>
+  
+  <li>
+    <h5>Sci-kit learn</h5><span class="bar"><span class="Sci-kitlearn"></span></span>
+  </li>
+  
+  <li>
+    <h5>Matplotlib</h5><span class="bar"><span class="Matplotlib"></span></span>
+  </li>
+  
+  <li>
+    <h5>Plotly</h5><span class="bar"><span class="Plotly"></span></span>
+  </li>
+  
+  <li>
+    <h5>Seaborn</h5><span class="bar"><span class="Seaborn"></span></span>
+  </li>
+  
+  <li>
+    <h5>Catmaid</h5><span class="bar"><span class="Catmaid"></span></span>
+  </li>
+  
+  <li>
+    <h5>NeuTu</h5><span class="bar"><span class="NeuTu"></span></span>
+  </li>
+  
+  <li>
+    <h5>Cell culture</h5><span class="bar"><span class="Cellculture"></span></span>
+  </li>
+  
+  <li>
+    <h5>Indirect ELISA</h5><span class="bar"><span class="IndirectELISA"></span></span>
+  </li>
+  
+  <li>
+    <h5>Polymerase chain reaction</h5><span class="bar"><span class="Polymerasechainreaction"></span></span>
+  </li>
+  
+  <li>
+    <h5>Flow cytometry</h5><span class="bar"><span class="Flowcytometry"></span></span>
+  </li>
+  
+  <li>
+    <h5>Gel electrophoresis</h5><span class="bar"><span class="Gelelectrophoresis"></span></span>
+  </li>
+  
+  <li>
+    <h5>Neural networks</h5><span class="bar"><span class="Neuralnetworks"></span></span>
+  </li>
+  
+  <li>
+    <h5>Chi-squared</h5><span class="bar"><span class="Chi-squared"></span></span>
+  </li>
+  
+  <li>
+    <h5>Regression</h5><span class="bar"><span class="Regression"></span></span>
+  </li>
+  
+  <li>
+    <h5>Linear algebra</h5><span class="bar"><span class="Linearalgebra"></span></span>
+  </li>
+  
+  <li>
+    <h5>Multivariable calculus</h5><span class="bar"><span class="Multivariablecalculus"></span></span>
+  </li>
+  
+  <li>
+    <h5>Probability</h5><span class="bar"><span class="Probability"></span></span>
+  </li>
+  
+  <li>
+    <h5>HTML</h5><span class="bar"><span class="HTML"></span></span>
+  </li>
+  
+  <li>
+    <h5>CSS</h5><span class="bar"><span class="CSS"></span></span>
+  </li>
+  
+  <li>
+    <h5>Javascript</h5><span class="bar"><span class="Javascript"></span></span>
+  </li>
+  
+  <li>
+    <h5>Java</h5><span class="bar"><span class="Java"></span></span>
+  </li>
+  
+  <li>
+    <h5>Python</h5><span class="bar"><span class="Python"></span></span>
+  </li>
+  
+  <li>
+    <h5>R</h5><span class="bar"><span class="R"></span></span>
+  </li>
+  
+  <li>
+    <h5>ImageJ</h5><span class="bar"><span class="ImageJ"></span></span>
+  </li>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
 </section>
-
-
 </body>
 </html>
