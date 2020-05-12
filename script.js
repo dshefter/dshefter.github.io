@@ -30,7 +30,7 @@ function showAll() {
     document.getElementById('R').style.display = 'block';
     document.getElementById('ImageJ').style.display = 'block';
  
-    document.getElementById("skillrows").scrollIntoView({behavior: "smooth"});
+    document.getElementById("skills-bars").scrollIntoView({behavior: "smooth"});
 }
 function hideAll() {
     document.getElementById('IndependentProjectPlanning').style.display = 'none';
