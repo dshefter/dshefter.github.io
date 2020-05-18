@@ -8,7 +8,10 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="script.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+<script src="math.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
 </head>
  <body>
 
@@ -18,7 +21,7 @@
 <div class="user-box">
 <img src="images/profile_wall_cropped.jpg">
 <h1>Deena Shefter</h1>
-<p>Computational Biology</p>
+<p>Neuroscience & Data Science</p>
 </div>
 </div>
 <div class="scroll-btn">
@@ -38,21 +41,21 @@
     <i class="fa fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#about">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#resume">Resume</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Projects</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -65,8 +68,6 @@
 <div class="row">
 <div class="col-md-6 text-center">
 <img src="images/prof4.jpeg" class="second-img">
-<br>
-<br>
 </div>
 <div class="col-md-6">
 <div class="about-header-1">
@@ -98,7 +99,6 @@ with applications of machine learning and data science to make strides in medici
 </div>
 
 <!--------------Resume-------------->
-<hr id="horizontal">
 <div class="resume" id="resume">
 <div class="container" id="resume-container">
 <div class="header" id="resume-header">
@@ -117,7 +117,7 @@ with applications of machine learning and data science to make strides in medici
   <h3><b>Education</b></h3>
 </div>
 <hr id="resume-break">
-<div class="row" id="ed-row">
+<!-- <div class="row" id="ed-row"> -->
 <table id="education">
 <!-- <ul id="resume-list"> -->
 
@@ -125,7 +125,7 @@ with applications of machine learning and data science to make strides in medici
 <!-- <div class="education_container"> -->
 <tr>
   <td id="ed-td">
-    <h4><b>Columbia University</b></h4>
+    <h4><b>Columbia University, New York, NY</b></h4>
     <i>Bachelor of Arts in Neuroscience and Data Science</i>
     <p>
       <ul id="inner-list">
@@ -146,12 +146,11 @@ with applications of machine learning and data science to make strides in medici
 <!-- <div class="education_container"> -->
 <tr>
   <td id="ed-td">
-  <h4><b>Bergen County Academies</b></h4>
+  <h4><b>Bergen County Academies, Hackensack, NJ</b></h4>
   <i>High School Student</i>
   <p>
     <ul id="inner-list">
-      <li>High School Coursework: AP Calculus, AP Biology, Advanced Chemistry, AP Statistics, AP Physics C </li>
-      <li>GPA: 3.84/4.00</li> 
+      <li>High School Coursework: AP Calculus, AP Biology, Advanced Chemistry, AP Statistics, AP Physics C </li> 
     </ul>
   </p>
 </td>
@@ -164,7 +163,7 @@ with applications of machine learning and data science to make strides in medici
 
 </ul>
 </table>
-</div>
+<!-- </div> -->
 
 <!--------------Experience--------->
 
@@ -173,7 +172,7 @@ with applications of machine learning and data science to make strides in medici
 </div>
 <hr id="resume-break">
 
-<div class="row" id="exp-row">
+<!-- <div class="row" id="exp-row"> -->
 <table>
 <tr>
 
@@ -182,7 +181,7 @@ with applications of machine learning and data science to make strides in medici
 <!-- <div class="experience_container"> -->
 <tr>
   <td>
-<h4><b>Simons Foundation Center for Computational Biology</b></h4>
+<h4><b>Simons Foundation Center for Computational Biology, New York, NY</b></h4>
 <i>Associate Research Analyst</i>
 <p>
   <ul id="inner-list">
@@ -205,7 +204,7 @@ with applications of machine learning and data science to make strides in medici
 <!-- <div class="experience_container"> -->
 <tr>
   <td>
-<h4><b>Columbia Undergraduate Science Journal</b></h4>
+<h4><b>Columbia Undergraduate Science Journal, New York, NY</b></h4>
 <i>CJSJ Editor-in-Chief</i>
 <p>
   <ul id="inner-list">
@@ -229,7 +228,7 @@ with applications of machine learning and data science to make strides in medici
 <!-- <div class="experience_container"> -->
 <tr>
   <td>
-<h4><b>Neuroscience Lab Columbia University Medical Center</b></h4>
+<h4><b>Neuroscience Lab Columbia University Medical Center, New York, NY</b></h4>
 <i>Researcher</i>
 <p>
   <ul id="inner-list">
@@ -253,7 +252,7 @@ with applications of machine learning and data science to make strides in medici
 <!-- <div class="experience_container"> -->
 <tr>
   <td>
-<h4><b>Breast Cancer Genetics Lab Columbia University Medical Center</b></h4>
+<h4><b>Breast Cancer Genetics Lab Columbia University Medical Center, New York, NY</b></h4>
 <i>Laboratory Intern</i>
 <p>
   <ul id="inner-list">
@@ -273,7 +272,7 @@ with applications of machine learning and data science to make strides in medici
 <!-- </ul> -->
 </tr>
 </table>
-</div>
+<!-- </div> -->
 
 <!--------------Research-------------->
 
@@ -285,34 +284,39 @@ with applications of machine learning and data science to make strides in medici
   <h3><b>Awards and Honors</b></h3>
 </div>
 <hr id="resume-break">
-<div class="awards-container">
-<ul id="resume-list">
-<li>
-<p>
+<table>
+<tr>
+  <td>
   <ul id="inner-list">
-    <li><b>Dean's List</b></li>
-    <li><b>Davidson Fellow</b> ($25,000 scholarship) - awarded upon submission of research paper</li>
-    <li><b>Regeneron Science Talent Search Semifinalist</b> ($2,000 prize)</li>
-    <li><b>Research Expo Symposium Finalist</b> ($200 prize)</li>
-    <li><b>Health Occupations Student of America</b> - Second Place at International Competition</li>
+    <p><li><b>Dean's List</b> | 08/2018</li></p>
+    <p><li><b>Davidson Fellow</b> ($25,000 scholarship) - awarded upon submission of research paper | 07/2018</li></p>
+    <p><li><b>Regeneron Science Talent Search Semifinalist</b> ($2,000 prize) | 01/2018</li></p>
+    <p><li><b>Research Expo Symposium Finalist</b> ($200 prize) | 01/2018</li></p>
+    <p><li><b>Health Occupations Student of America</b> - Second Place at International Competition | 06/2018</li></p>
   </ul>
-</p>
-</li>
-</ul>
-</div>
+</td>
+
+<!-- <td id="awardsdate" valign="top">
+  <p>08/2018</p>
+  <p>07/2018</p>
+  <p>01/2018</p>
+  <p>01/2018</p>
+  <p>06/2018</p>
+</td> -->
+
+</tr>
+</table>
 
 
-</div>
-</div>
-</div>
+
 
 <!-------------Skills-------------->
-<hr id="horizontal">
 <div class="skills-section">
 
 
   <div class="header" id="skills-header">
-    <h3>Skills</h3>
+    <h3><b>Skills</b></h3>
+  <hr id="resume-break">
   </div>
   <div class="skills-button-container">
   <button class="skills-button" type="button" onclick="showAll()">All</button>
@@ -323,141 +327,217 @@ with applications of machine learning and data science to make strides in medici
   <button class="skills-button" type="button" onclick="showQuant()">Quantitative</button>
   <button class="skills-button" type="button" onclick="showWebDev()">Web Development</button>
   <button class="skills-button" type="button" onclick="showLang()">Languages</button>
+  <button class="skills-button" type="button" onclick="hideAll()">Hide Skills</button>
+  
   </div>
   
-  <div class="skills-bars-container">
+  <!-- <div class="skills-bars-container"> -->
   <div class="skills-bars" id="skills-bars">
-  <div class="skills-bar-header">
-  <li id="IndependentProjectPlanning">
-    <h5>Independent Project Planning</h5><span class="bar"><span class="IndependentProjectPlanning"></span></span>
+  <li class="IndependentProjectPlanning" id="IndependentProjectPlanning" style="display: none;">
+    <h5>Independent Project Planning</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="ScientificWriting">
-    <h5>Scientific Writing</h5><span class="bar"><span class="ScientificWriting"></span></span>
+  <li class="ScientificWriting" id="ScientificWriting" style="display: none;">
+    <h5>Scientific Writing</h5>
+    <p class="percent">85%</p>
   </li>
   
-  <li id="PublicSpeaking">
-    <h5>Public Speaking</h5><span class="bar"><span class="PublicSpeaking"></span></span>
+  <li class="PublicSpeaking" id="PublicSpeaking" style="display: none;">
+    <h5>Public Speaking</h5>
+    <p class="percent">85%</p>
+
   </li>
   
-  <li id="Presentation">
-    <h5>Presentation</h5><span class="bar"><span class="Presentation"></span></span>
+  <li class="Presentation" id="Presentation" style="display: none;">
+    <h5>Presentation</h5>
+    <p class="percent">85%</p>
   </li>
   
-  <li id="Numpy">
-    <h5>Numpy</h5><span class="bar"><span class="Numpy"></span></span>
+  <li class="Numpy" id="Numpy" style="display: none;">
+    <h5>Numpy</h5>
+    <p class="percent">90%</p>
   </li>
   
-  <li id="Pandas">
-    <h5>Pandas</h5><span class="bar"><span class="Pandas"></span></span>
+  <li class="Pandas" id="Pandas" style="display: none;">
+    <h5>Pandas</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Sci-kitlearn">
-    <h5>Sci-kit learn</h5><span class="bar"><span class="Sci-kitlearn"></span></span>
+  <li class="Sci-kitlearn" id="Sci-kitlearn" style="display: none;">
+    <h5>Sci-kit learn</h5>
+    <p class="percent">75%</p>
   </li>
   
-  <li id="Matplotlib">
-    <h5>Matplotlib</h5><span class="bar"><span class="Matplotlib"></span></span>
+  <li class="Matplotlib" id="Matplotlib" style="display: none;">
+    <h5>Matplotlib</h5>
+    <p class="percent">90%</p>
   </li>
   
-  <li id="Plotly">
-    <h5>Plotly</h5><span class="bar"><span class="Plotly"></span></span>
+  <li class="Plotly" id="Plotly" style="display: none;">
+    <h5>Plotly</h5>
+    <p class="percent">70%</p>
   </li>
   
-  <li id="Seaborn">
-    <h5>Seaborn</h5><span class="bar"><span class="Seaborn"></span></span>
+  <li class="Seaborn" id="Seaborn" style="display: none;">
+    <h5>Seaborn</h5>
+    <p class="percent">60%</p>
   </li>
   
-  <li id="Catmaid">
-    <h5>Catmaid</h5><span class="bar"><span class="Catmaid"></span></span>
+  <li class="Catmaid" id="Catmaid" style="display: none;">
+    <h5>Catmaid</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="NeuTu">
-    <h5>NeuTu</h5><span class="bar"><span class="NeuTu"></span></span>
+  <li class="NeuTu" id="NeuTu" style="display: none;">
+    <h5>NeuTu</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Cellculture">
-    <h5>Cell culture</h5><span class="bar"><span class="Cellculture"></span></span>
+  <li class="Cellculture" id="Cellculture" style="display: none;">
+    <h5>Cell culture</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="IndirectELISA">
-    <h5>Indirect ELISA</h5><span class="bar"><span class="IndirectELISA"></span></span>
+  <li class="IndirectELISA" id="IndirectELISA" style="display: none;">
+    <h5>Indirect ELISA</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Polymerasechainreaction">
-    <h5>Polymerase chain reaction</h5><span class="bar"><span class="Polymerasechainreaction"></span></span>
+  <li class="Polymerasechainreaction" id="Polymerasechainreaction" style="display: none;">
+    <h5>Polymerase chain reaction</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Flowcytometry">
-    <h5>Flow cytometry</h5><span class="bar"><span class="Flowcytometry"></span></span>
+  <li class="Flowcytometry" id="Flowcytometry" style="display: none;">
+    <h5>Flow cytometry</h5>
+    <p class="percent">85%</p>
   </li>
   
-  <li id="Gelelectrophoresis">
-    <h5>Gel electrophoresis</h5><span class="bar"><span class="Gelelectrophoresis"></span></span>
+  <li class="Gelelectrophoresis" id="Gelelectrophoresis" style="display: none;">
+    <h5>Gel electrophoresis</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Neuralnetworks">
-    <h5>Neural networks</h5><span class="bar"><span class="Neuralnetworks"></span></span>
+  <li class="Neuralnetworks" id="Neuralnetworks" style="display: none;">
+    <h5>Neural networks</h5>
+    <p class="percent">75%</p>
   </li>
   
-  <li id="Chi-squared">
-    <h5>Chi-squared</h5><span class="bar"><span class="Chi-squared"></span></span>
+  <li class="Chi-squared" id="Chi-squared" style="display: none;">
+    <h5>Chi-squared</h5>
+    <p class="percent">80%</p>
   </li>
   
-  <li id="Regression">
-    <h5>Regression</h5><span class="bar"><span class="Regression"></span></span>
+  <li class="Regression" id="Regression" style="display: none;">
+    <h5>Regression</h5>
+    <p class="percent">90%</p>
   </li>
   
-  <li id="Linearalgebra">
-    <h5>Linear algebra</h5><span class="bar"><span class="Linearalgebra"></span></span>
+  <li class="Linearalgebra" id="Linearalgebra" style="display: none;">
+    <h5>Linear algebra</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Multivariablecalculus">
-    <h5>Multivariable calculus</h5><span class="bar"><span class="Multivariablecalculus"></span></span>
+  <li class="Multivariablecalculus" id="Multivariablecalculus" style="display: none;">
+    <h5>Multivariable calculus</h5>
+    <p class="percent">80%</p>
   </li>
   
-  <li id="Probability">
-    <h5>Probability</h5><span class="bar"><span class="Probability"></span></span>
+  <li class="Probability" id="Probability" style="display: none;">
+    <h5>Probability</h5>
+    <p class="percent">85%</p>
   </li>
   
-  <li id="HTML">
-    <h5>HTML</h5><span class="bar"><span class="HTML"></span></span>
+  <li class="HTML" id="HTML" style="display: none;">
+    <h5>HTML</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="CSS">
-    <h5>CSS</h5><span class="bar"><span class="CSS"></span></span>
+  <li class="CSS" id="CSS" style="display: none;">
+    <h5>CSS</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Javascript">
-    <h5>Javascript</h5><span class="bar"><span class="Javascript"></span></span>
+  <li class="Javascript" id="Javascript" style="display: none;">
+    <h5>Javascript</h5>
+    <p class="percent">70%</p>
   </li>
   
-  <li id="Java">
-    <h5>Java</h5><span class="bar"><span class="Java"></span></span>
+  <li class="Java" id="Java" style="display: none;">
+    <h5>Java</h5>
+    <p class="percent">100%</p>
   </li>
   
-  <li id="Python">
-    <h5>Python</h5><span class="bar"><span class="Python"></span></span>
+  <li class="Python" id="Python" style="display: none;">
+    <h5>Python</h5>
+    <p class="percent">85%</p>
   </li>
   
-  <li id="R">
-    <h5>R</h5><span class="bar"><span class="R"></span></span>
+  <li class="R" id="R" style="display: none;">
+    <h5>R</h5>
+    <p class="percent">60%</p>
   </li>
   
-  <li id="ImageJ">
-    <h5>ImageJ</h5><span class="bar"><span class="ImageJ"></span></span>
+  <li class="ImageJ" id="ImageJ" style="display: none;">
+    <h5>ImageJ</h5>
+    <p class="percent">70%</p>
   </li>
   </div>
+<!-- </div> -->
+
+<script>
+  $('.skill-per').each(function(){
+    var $this = $(this);
+    var per = $this.attr('per');
+    $this.css("width", per+'%');
+    $({animatedValue: 0}).animate({animatedValue: per},{
+      duration: 1000,
+      step: function(){
+        $this.attr('per', Math.floor(this.animatedValue) + '%');
+    },
+    complete: function(){
+      $this.attr('per', Math.floor(this.animatedValue) + '%');
+      }
+   });
+  });
+
+</script>
+
+</div>
+
+</div>
+</div>
+
+<div class="contact" id="contact">
+  <div class="container text-center">
+  <h5>Contact Me</h5>
+  <p id="contact-text">Let's get in touch!</p>
+  <div class="row">
+  <div class="col-md-4"><a href="mailto:ds3655@columbia.edu" target="_blank">
+  <i class="fa fa-envelope"></i>
+  <p>ds3655@columbia.edu</p>
+  </a>
   </div>
-</div>
-</div>
-
-
-
-
-</div>
+  <div class="col-md-4"><a href="https://www.linkedin.com/in/deenashefter/" target="_blank">
+  <i class="fa fa-linkedin"></i>
+  <p>LinkedIn</p>
+  </a>
+  </div>
+  <div class="col-md-4"><a href="https://github.com/dshefter" target="_blank">
+  <i class="fa fa-github"></i>
+  <p>GitHub</p>
+  </a>
+  </div>
+  
+  </div>
+  </div>
+  </div>
 
 
 </section>
+<script src="smooth-scroll.js"></script>
+<script> var scroll= new SmoothScroll('a[href*="#"]'); 
+</script>
 </body>
 </html>
